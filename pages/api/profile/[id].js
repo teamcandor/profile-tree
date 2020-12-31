@@ -37,11 +37,11 @@ export default async (req, res) => {
 
 
   switch (method) {
-    case "GET":
+    case "POST":
       await getPerson()
       break
     default:
-      res.setHeader("Allow", ["GET"])
+      res.setHeader("Allow", ["POST"])
       res.status(405).end(`Method ${method} Not Allowed`)
   }
 }
