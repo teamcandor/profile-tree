@@ -1,4 +1,4 @@
-# ProfileTree
+# Profile Tree
 
 ## Starting the project
 
