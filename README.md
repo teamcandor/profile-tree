@@ -1,4 +1,4 @@
-# Candor Interview Project
+# ProfileTree
 
 ## Starting the project
 
