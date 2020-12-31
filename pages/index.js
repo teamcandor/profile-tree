@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <main>
       <Head>
-        <title>Dashboard</title>
+        <title>Profile</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

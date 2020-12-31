@@ -6,9 +6,9 @@ export default async (req, res) => {
 
   const getPerson = async () => {
 
-    const person = (await axios.get('https://pipl.ir/v1/getPerson')).data
+    const person = (await axios.get('https://pipl.ir/v1/getPerson')).data.person
 
-    const posts = [
+    person.posts = [
       {
         title: 'How to Write a Software Engineer Cover Letter',
         image: 'https://images.unsplash.com/photo-1461681334529-b7210750c909?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2552&q=80'
@@ -23,7 +23,7 @@ export default async (req, res) => {
       }
     ]
 
-    res.status(200).send({ person, posts })
+    res.status(200).send(person)
   }
 
 
