@@ -6,7 +6,10 @@ const Index = () => {
 
   // 1: Your API endpoint to query is /api/profile (POST-only)
   // 2: Our API endpoint is RESTful - we can get a user by querying /api/profile/id
-  // 3: Get the user with the following ID: 1OuR3CWOEsfISTpFxsG7
+  // 3: Get the user with the following ID: 1OuR3CWOEsfISTpFxsG7  
+  // 4: Additionally, pass a POST body parameter: isFullProfile: true
+
+  const profileId = '1OuR3CWOEsfISTpFxsG7'
 
   return (
     <main>
