@@ -1,14 +1,15 @@
-import Head from 'next/head'
-import styles from './index.module.css'
+import Head from "next/head";
+import styles from "./index.module.css";
 
 const Index = () => {
-
   // 1: Your API endpoint to query is /api/profile (POST-only)
-  // 2: Our API endpoint is RESTful - we can get a user by querying /api/profile/id
-  // 3: Get the user with the following ID: 1OuR3CWOEsfISTpFxsG7  
+  // 2: Our API endpoint is RESTful - we can get a user by querying /api/profile/id with the Fetch API
+  // 3: Get the user with the following ID: 1OuR3CWOEsfISTpFxsG7  (eg: api/profile/${id})
   // 4: Additionally, pass a POST body parameter: isFullProfile: true
 
-  const profileId = '1OuR3CWOEsfISTpFxsG7'
+  // * Hint * - Don't forget to pass headers with your request
+
+  const profileId = "1OuR3CWOEsfISTpFxsG7";
 
   return (
     <main>
@@ -21,9 +22,8 @@ const Index = () => {
         {/* 🛠: Create a profile page for the user */}
         {/* 🛠: Additionally, show all of the user's recent posts */}
       </div>
-
     </main>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;
