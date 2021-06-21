@@ -7,7 +7,8 @@ const Index = () => {
   // 3: Get the user with the following ID: 1OuR3CWOEsfISTpFxsG7  (eg: api/profile/${id})
   // 4: Additionally, pass a POST body parameter: isFullProfile: true
   // 5: Can you implement local storage support (so we don't have to query profile each load)?
-  // 6: Even better, can you implement local storage as a custom hook?
+    // 5.1: Even better, can you implement local storage as a custom hook?
+  // 6: Can you implement SSR to query the endpoint and render it? (you can get rid of local storage hook for this)
 
   // * Hint * - Don't forget to pass headers with your request
 
